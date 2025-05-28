@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#banner
+
+print_banner() {
+        echo "Enter a message for the banner:"
+        read user_message
+
+        uppercase_message=$(echo "$user_message" | tr 'a-z' 'A-Z')
+        lowercase_message=$(echo "$user_message" | tr 'A-Z' 'a-z')
+
+
+        echo "********************************************************"
+        echo "*                                                      *"
+        echo "*          $uppercase_message *"
+        echo "*                                                      *"
+        echo "********************************************************"
+
+        echo "**"
+
+
+        echo "********************************************************"
+        echo "*                                                      *"
+        echo "*          $lowercase_message *"
+        echo "*                                                      *"
+        echo "********************************************************"
+
+}
+
+print_banner
