@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#length of word
+
+echo -n "Enter a word:"
+read word
+
+length=$(expr length "$word")
+
+echo "The word '$word' is $length character."
