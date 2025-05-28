@@ -1,0 +1,24 @@
+#!/bin/bash
+
+name=$1
+
+# Check if the argument is empty
+if [ -z "$name" ]; then
+    echo "You have not entered any arguments"
+    exit 1
+fi
+
+# Check if it's a directory
+if [ -d "$name" ]; then
+    echo "You have entered a directory name"
+    ls -l "$name"
+
+# Check if it's a file
+elif [ -f "$name" ]; then
+    echo "You have entered a file name"
+    more "$name"
+
+# Neither file nor directory
+else
+    echo "Your file or directory name is invalid"
+fi
