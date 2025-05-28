@@ -1,0 +1,35 @@
+hpgopichand_23@LAPTOP-D72GNBHF:~$ nano file1.sh
+hpgopichand_23@LAPTOP-D72GNBHF:~$ cat file1.sh
+#!/bin/bash
+# This is a simple script to display system information
+
+echo "Hello, Ubuntu!"
+echo "System Information:"
+hpgopichand_23@LAPTOP-D72GNBHF:~$ nano file2.sh
+hpgopichand_23@LAPTOP-D72GNBHF:~$ cat file2.sh
+#!/bin/bash
+# This is a simple script to display system information
+
+echo "Welcome"
+echo "Linux"
+
+hpgopichand_23@LAPTOP-D72GNBHF:~$ cp file1.sh file2.sh
+hpgopichand_23@LAPTOP-D72GNBHF:~$ cat file2.sh
+#!/bin/bash
+# This is a simple script to display system information
+
+echo "Hello, Ubuntu!"
+echo "System Information:"
+hpgopichand_23@LAPTOP-D72GNBHF:~$ cat file1.sh >> file2.sh
+hpgopichand_23@LAPTOP-D72GNBHF:~$ cat file2.sh
+#!/bin/bash
+# This is a simple script to display system information
+
+echo "Hello, Ubuntu!"
+echo "System Information:"
+#!/bin/bash
+# This is a simple script to display system information
+
+echo "Hello, Ubuntu!"
+echo "System Information:"
+hpgopichand_23@LAPTOP-D72GNBHF:~$
